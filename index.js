@@ -1,5 +1,18 @@
-const http = require('http');
+const express = require('express');
 const colors = require('colors');
+const server = express();
+server.get('/', function(req,res){
+    res.send('<h1> Hola mundo con express y node </h1>');
+    res.end();
+});
+server.listen(3000, function(){
+    console.log('Server on port 3000'.red);
+});
+
+
+
+//const http = require('http');
+//const colors = require('colors');
 
 // req=request, res=respuesta del server
 /*opción 1, todo dentro
@@ -11,7 +24,7 @@ http.createServer(function(req, res){
 */
 //opcion 2 guardar en  una constate y llamar al metodo
 
-const handleServer = function(req, res){
+/*const handleServer = function(req, res){
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<h1>Hola mundo hola pirinola </h1>');
     res.end();
@@ -20,7 +33,7 @@ const server = http.createServer(handleServer);
 server.listen(3000, function(){
     console.log('Server on port 3000'.magenta);
 });
-
+*/
 //la consola queda abierta en el puerto 3000, ctrl+c dos veces y se sale del server
 /* leer lo que hay en un doc y pasarlo a string
 const fs = require('fs');

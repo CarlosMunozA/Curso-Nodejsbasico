@@ -1,5 +1,29 @@
 {
   "dependencies": {
-    "colors": "^1.4.0"
-  }
+    "colors": "^1.4.0",
+    "express": "^4.17.1"
+  },
+  "name": "nodejs-curso",
+  "version": "1.0.0",
+  "description": "un curso de nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosMunozA/Curso-Nodejsbasico.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Curso",
+    "Español",
+    "CarlosMuñoz"
+  ],
+  "author": "Carlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosMunozA/Curso-Nodejsbasico/issues"
+  },
+  "homepage": "https://github.com/CarlosMunozA/Curso-Nodejsbasico#readme"
 }
